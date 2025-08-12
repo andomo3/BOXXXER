@@ -1,0 +1,35 @@
+// This configuration defines tasks for starting the frontend and backend
+// independently, plus a convenient Start All task that runs both.
+// You can now run these from the VS Code Command Palette (Ctrl+Shift+P or Cmd+Shift+P)
+// by typing "Run Task" and selecting your desired task.
+
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start Frontend (Expo)",
+      "type": "shell",
+      "command": "npx expo start",
+      "isBackground": true,
+      "problemMatcher": [],
+      "options": {
+        "cwd": "${workspaceFolder}/app"
+      }
+    },
+    {
+      "label": "Start Backend (Uvicorn)",
+      "type": "shell",
+      "command": "uvicorn main:app --reload --port 8000",
+      "isBackground": true,
+      "problemMatcher": [],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      }
+    },
+    {
+      "label": "Start All",
+      "dependsOn": ["Start Frontend (Expo)", "Start Backend (Uvicorn)"],
+      "problemMatcher": []
+    }
+  ]
+}
