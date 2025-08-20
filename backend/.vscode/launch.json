@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Expo (Android)",
+      "request": "launch",
+      "type": "node",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["expo", "start", "--android"],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Expo (iOS)",
+      "request": "launch",
+      "type": "node",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["expo", "start", "--ios"],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "FastAPI (Uvicorn)",
+      "type": "python",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": ["backend.app.main:app", "--reload", "--port", "8000"],
+      "justMyCode": true,
+      "console": "integratedTerminal"
+    }
+  ]
+}
