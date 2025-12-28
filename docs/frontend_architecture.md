@@ -1,5 +1,11 @@
 # Frontend Architecture
 
+## Why Expo Router + Zustand
+
+Expo Router provides predictable file-based navigation that mirrors product
+flows. Zustand keeps state colocated with logic, avoids prop drilling, and
+simplifies persistence hydration on app startup.
+
 ## Navigation
 
 - Expo Router drives file-based navigation

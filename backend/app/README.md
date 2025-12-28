@@ -71,4 +71,4 @@ npm test
 
 ## Docs
 
-See `backend/app/docs` for architecture, design system, and product decisions.
+See `docs` at the repo root for architecture, design system, and product decisions.

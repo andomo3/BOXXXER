@@ -1,4 +1,5 @@
 # Product Decisions
+These decisions were made to maximise learning velocity, demo reliability, and architectural clarity during early development.
 
 ## Offline-First MVP
 

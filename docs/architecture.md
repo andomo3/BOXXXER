@@ -32,3 +32,17 @@ Result -> Store -> History -> AsyncStorage
 - Machine learning training/inference
 - Auth and multi-user accounts
 - External database integration
+
+Finaly, this architecture intentionally avoids backend dependencies in the MVP phase. By running optimization and persistence locally, the system remains deterministic, testable, and demo-ready while preserving a clear upgrade path to backend APIs and ML inference. Belwo is an ASCII diagram demonstrating this:
+
+
+Templates / Manual Input
+        ↓
+   Draft Items (Zustand)
+        ↓
+ Local Optimizer (deterministic)
+        ↓
+     Result Object
+        ↓
+ History Store → AsyncStorage
+

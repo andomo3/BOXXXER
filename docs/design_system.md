@@ -26,3 +26,7 @@ Defined in `config/tokens.ts`:
 - Button labels use `accessibilityLabel`
 - Tap targets target 44x44 minimum
 - Icons use Expo vector icons for Android compatibility
+
+A lightweight design system was introduced early to prevent UI drift and
+to ensure new features could be added without rethinking spacing, hierarchy,
+or accessibility.
