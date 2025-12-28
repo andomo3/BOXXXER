@@ -1,0 +1,9 @@
+.git/
+.expo/
+.venv/
+node_modules/
+backend/app/__tests__/
+backend/app/docs/
+backend/app/prompts/
+backend/app/logic/
+backend/app/ml/
