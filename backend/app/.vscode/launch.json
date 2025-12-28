@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Attach to Packager (Expo, 19000)",
+      "type": "reactnative",
+      "request": "attach",
+      "port": 19000,
+      "cwd": "${workspaceFolder}",
+      "expo": true
+    }
+  ]
+}
